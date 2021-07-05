@@ -1,7 +1,7 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
-date: {{ .Date }}
-lastmod: {{ .Date }}
+title: "Life"
+date: 2021-07-05T10:05:25+08:00
+lastmod: 2021-07-05T10:05:25+08:00
 draft: true
 keywords: []
 description: ""
@@ -41,3 +41,8 @@ sequenceDiagrams:
 ---
 
 <!--more-->
+# 第一篇博客
+
+## Show my life
+
+![我的图片](/img/11ame.png)
