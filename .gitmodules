@@ -2,3 +2,6 @@
 	path = public
 	url = git@github.com:smiecj/smiecj.github.io.git
 	branch = master
+[submodule "themes/eureka"]
+	path = themes/eureka
+	url = git@github.com:smiecj/hugo-eureka.git
