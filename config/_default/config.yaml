@@ -21,18 +21,63 @@ defaultContentLanguageInSubdir: false
 # Uncomment for google analytics
 # googleAnalytics: UA-123-45
 
+# markup:
+#   # Do not modify markup.highlight
+#   highlight:
+#     codeFences: false
+#     noClasses: false
+#   tableOfContents:
+#     startLevel: 2
+#     endLevel: 6
+#     ordered: false
+#   goldmark:
+#     renderer:
+#       unsafe: true
+#   blackFriday:
+#     extensions:
+#     - hardLineBreak
+
+# markup:
+#   defaultMarkdownHandler: blackfriday
+#   blackFriday:
+#     angledQuotes: false
+#     extensions: null
+#     extensionsMask: null
+#     footnoteAnchorPrefix: ""
+#     footnoteReturnLinkContents: ""
+#     fractions: true
+#     hrefTargetBlank: false
+#     latexDashes: true
+#     nofollowLinks: false
+#     noreferrerLinks: false
+#     plainIDAnchors: true
+#     skipHTML: false
+#     smartDashes: true
+#     smartypants: true
+#     smartypantsQuotesNBSP: false
+#     taskLists: true
+#     extensions: ["hardLineBreak"]
+
 markup:
-  # Do not modify markup.highlight
-  highlight:
-    codeFences: false
-    noClasses: false
-  tableOfContents:
-    startLevel: 2
-    endLevel: 6
-    ordered: false
   goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
     renderer:
-      unsafe: true
+      hardWraps: true
+      unsafe: false
+      xhtml: false
 
 taxonomies:
   category: categories
